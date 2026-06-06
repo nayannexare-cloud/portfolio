@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayan Jyoti Thapa — Digital Marketer & Performance Ads Specialist | Assam, India</title>
+  <meta name="description" content="Portfolio website for Nayan Jyoti Thapa, Digital Marketer and Performance Ads Specialist based in Assam, India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* CSS: Theme and reset */
+    :root {
+      --accent: #111111;
+      --accent-secondary: #444444;
+      --accent-glow: rgba(0, 0, 0, 0.08);
+      --green: #22C55E;
+      --green-hover: #16A34A;
+      --green-glow: rgba(34, 197, 94, 0.15);
+      --bg: #F9F9F9;
+      --surface: #FFFFFF;
+      --surface-2: #F3F3F3;
+      --border: #E5E5E5;
+      --text-primary: #0A0A0A;
+      --text-muted: #6B7280;
+      --text-subtle: #9CA3AF;
+      --radius-card: 12px;
+      --radius-button: 8px;
+      --max-width: 1180px;
+      --nav-height: 76px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--nav-height);
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: 0;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Syne", "Inter", sans-serif;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      font-size: clamp(1.18rem, 2vw, 1.45rem);
+    }
+
+    p {
+      color: var(--text-muted);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 44px;
+      padding: 12px 18px;
+      border-radius: var(--radius-button);
+      color: var(--text-primary);
+      font-weight: 800;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary {
+      background: #111111;
+      border: 1px solid #111111;
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      background: #333333;
+      border-color: #333333;
+      color: #FFFFFF;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #D1D5DB;
+      color: #111111;
+    }
+
+    .btn-outline:hover,
+    .btn-outline:focus-visible {
+      border-color: #111111;
+      color: #111111;
+      transform: translateY(-2px);
+    }
+
+    /* Green action buttons — Hire Me, View My Work, Send Message */
+    .nav-actions > .btn-primary,
+    .mobile-menu .btn-primary,
+    .hero-ctas > .btn-primary,
+    .contact-form > .btn-primary {
+      background: var(--green);
+      border-color: var(--green);
+      color: #FFFFFF;
+    }
+
+    .nav-actions > .btn-primary:hover,
+    .nav-actions > .btn-primary:focus-visible,
+    .mobile-menu .btn-primary:hover,
+    .mobile-menu .btn-primary:focus-visible,
+    .hero-ctas > .btn-primary:hover,
+    .hero-ctas > .btn-primary:focus-visible {
+      background: var(--green-hover);
+      border-color: var(--green-hover);
+      color: #FFFFFF;
+    }
+
+    .contact-form > .btn-primary:hover,
+    .contact-form > .btn-primary:focus-visible {
+      background: var(--green-hover);
+      border-color: var(--green-hover);
+      color: #FFFFFF;
+      box-shadow: 0 4px 20px var(--green-glow);
+    }
+
+    .accent-text {
+      color: var(--accent);
+    }
+
+    /* CSS: Navigation */
+    .site-nav {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 50;
+      min-height: var(--nav-height);
+      transition: all 0.25s ease;
+    }
+
+    .site-nav.scrolled {
+      background: rgba(249, 249, 249, 0.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      min-height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--accent);
+      font-family: "Syne", "Inter", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: #374151;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible {
+      color: #111111;
+    }
+
+    .nav-link.active {
+      color: #111111;
+      font-weight: 600;
+      text-shadow: none;
+    }
+
+    .hamburger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-button);
+      background: #FFFFFF;
+      color: #111111;
+      border: 1px solid #E5E5E5;
+    }
+
+    .mobile-menu {
+      display: none;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E5E5E5;
+      transition: max-height 0.3s ease, opacity 0.25s ease;
+    }
+
+    .mobile-menu.open {
+      max-height: 420px;
+      opacity: 1;
+    }
+
+    .mobile-menu-inner {
+      display: grid;
+      gap: 6px;
+      padding: 10px 16px 22px;
+    }
+
+    .mobile-menu a {
+      padding: 12px;
+      color: #374151;
+      font-weight: 800;
+      border-radius: var(--radius-button);
+    }
+
+    .mobile-menu a:hover,
+    .mobile-menu a:focus-visible,
+    .mobile-menu a.active {
+      color: #111111;
+      background: #F3F3F3;
+    }
+
+    /* CSS: Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-top: var(--nav-height);
+    }
+
+    .hero-content {
+      max-width: 960px;
+    }
+
+    .greeting {
+      background: #F3F3F3;
+      border: 1px solid #E5E5E5;
+      color: #111111;
+      font-weight: 900;
+      margin-bottom: 14px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+
+    .hero-eyebrow {
+      color: #111111;
+    }
+
+    .hero h1 {
+      color: #0A0A0A;
+    }
+
+    .role-your {
+      color: #6B7280;
+    }
+
+    .role-title {
+      background: linear-gradient(135deg, #111111, #555555);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .type-line {
+      min-height: 1.7em;
+      margin-top: 16px;
+      font-size: clamp(24px, 4vw, 42px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #6B7280;
+    }
+
+    .type-cursor {
+      color: var(--accent);
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin-top: 20px;
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.75;
+      color: var(--text-muted);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      left: 50%;
+      bottom: 28px;
+      transform: translateX(-50%);
+      color: var(--text-muted);
+      font-size: 1.4rem;
+    }
+
+    /* CSS: About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.4fr);
+      gap: clamp(32px, 6vw, 72px);
+      align-items: center;
+    }
+
+    .avatar-wrap {
+      display: grid;
+      place-items: center;
+    }
+
+    .avatar {
+      width: min(72vw, 320px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      color: #FFFFFF;
+      font-family: "Syne", "Inter", sans-serif;
+      font-size: clamp(3.2rem, 8vw, 5.8rem);
+      font-weight: 800;
+    }
+
+    .about-copy {
+      display: grid;
+      gap: 18px;
+      font-size: 1.03rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .stat-card {
+      min-height: 124px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      background: var(--surface);
+    }
+
+    .stat-card strong {
+      display: block;
+      color: var(--text-primary);
+      font-family: "Syne", "Inter", sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .stat-card span {
+      display: block;
+      color: var(--text-muted);
+      margin-top: 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .sample-note {
+      color: var(--text-muted);
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    /* CSS: Cards and grids */
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid #E5E5E5;
+      border-radius: var(--radius-card);
+      background: #FFFFFF;
+      transition: all 0.25s ease;
+    }
+
+    .card:hover {
+      background: #FAFAFA;
+      border-color: #111111;
+    }
+
+    .service-card {
+      min-height: 240px;
+      padding: 22px;
+    }
+
+    .service-card:hover,
+    .service-card:focus-within {
+      border-color: #111111;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+      transform: translateY(-4px);
+    }
+
+    .service-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 24px;
+      border-radius: 16px;
+      color: #111111;
+      background: #F3F3F3;
+      font-size: 1.25rem;
+    }
+
+    .service-card h3 {
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .service-card p {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    /* CSS: Work */
+    .filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .filter-btn {
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: var(--radius-button);
+      background: var(--surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      font-weight: 800;
+      transition: all 0.25s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn:focus-visible,
+    .filter-btn.active {
+      color: var(--text-primary);
+      border-color: var(--accent);
+      background: var(--surface-2);
+    }
+
+    .work-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .work-card {
+      position: relative;
+      display: flex;
+      min-height: 390px;
+      flex-direction: column;
+      gap: 16px;
+      padding: 22px;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .work-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #111111, #888888);
+    }
+
+    .work-card h3 {
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .work-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    .work-card:hover,
+    .work-card:focus-within {
+      transform: scale(1.02);
+      border-color: #111111;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    }
+
+    .work-overlay {
+      position: absolute;
+      inset: auto 16px 16px;
+      display: grid;
+      place-items: center;
+      min-height: 44px;
+      border-radius: var(--radius-button);
+      background: rgba(249, 249, 249, 0.92);
+      color: var(--text-primary);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
+      font-weight: 900;
+      border: 1px solid var(--border);
+    }
+
+    .work-card:hover .work-overlay,
+    .work-card:focus-within .work-overlay {
+      opacity: 1;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge,
+    .objective {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 900;
+    }
+
+    .badge {
+      background: #111111;
+      color: #FFFFFF;
+      font-size: 11px;
+      border: 1px solid #111111;
+    }
+
+    .objective {
+      color: #444444;
+      background: #F3F3F3;
+      border: 1px solid #E5E5E5;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .metric {
+      min-height: 76px;
+      display: grid;
+      align-content: center;
+      gap: 2px;
+      padding: 10px;
+      border-radius: 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+    }
+
+    .metric small {
+      color: #F97316;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      color: #111111;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .details-btn {
+      width: fit-content;
+      margin-top: 4px;
+    }
+
+    /* CSS: Journey and testimonials */
+    .timeline {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .milestone {
+      position: relative;
+      width: 50%;
+      padding: 0 48px 48px 48px;
+    }
+
+    .milestone:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+
+    .milestone:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+
+    .milestone::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #111111;
+      border: 3px solid #F9F9F9;
+      outline: 2px solid #111111;
+      z-index: 2;
+    }
+
+    .milestone:nth-child(odd)::before {
+      right: -6px;
+      left: auto;
+    }
+
+    .milestone:nth-child(even)::before {
+      left: -6px;
+      right: auto;
+    }
+
+    .milestone time {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .milestone h3 {
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .testimonial-card {
+      max-width: 760px;
+      margin-inline: auto;
+      padding: clamp(28px, 5vw, 48px);
+      text-align: center;
+      background: #FFFFFF;
+      border: 1px solid #E5E5E5;
+    }
+
+    .quote-icon {
+      color: #D1D5DB;
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .testimonial-card p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .testimonial-card a {
+      display: inline-flex;
+      margin-top: 22px;
+      color: #111111;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .testimonial-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* CSS: Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .contact-panel {
+      padding: 28px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 18px;
+      list-style: none;
+    }
+
+    .contact-list li {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+      color: var(--text-muted);
+    }
+
+    .contact-list i {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      color: #111111;
+      background: #F3F3F3;
+    }
+
+    .contact-list strong {
+      display: block;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .contact-list a {
+      color: #111111;
+      text-decoration: underline;
+    }
+
+    .contact-list a:hover {
+      color: #444444;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 16px;
+      padding: 28px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field label {
+      color: var(--text-primary);
+      font-weight: 800;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid #E5E5E5;
+      border-radius: var(--radius-button);
+      background: #FFFFFF;
+      color: #0A0A0A;
+      padding: 14px 15px;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .field textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: #111111;
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .form-message {
+      min-height: 24px;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .form-note a {
+      color: #111111;
+    }
+
+    /* CSS: Footer */
+    .footer {
+      padding: 42px 0;
+      background: #0A0A0A;
+      border-top: 1px solid #1F1F1F;
+      text-align: center;
+    }
+
+    .footer-brand {
+      color: #FFFFFF;
+      font-family: "Syne", "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+
+    .footer p {
+      color: #9CA3AF;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .footer p:first-of-type {
+      color: #FFFFFF;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      margin: 18px 0;
+      color: #9CA3AF;
+      font-weight: 700;
+    }
+
+    .footer-links a {
+      color: #9CA3AF;
+      transition: color 0.25s ease;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      color: #FFFFFF;
+    }
+
+    .footer a[href^="mailto:"] {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .footer a[href^="mailto:"]:hover {
+      text-decoration: underline;
+    }
+
+    /* CSS: Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .modal.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-card {
+      width: min(100%, 720px);
+      max-height: min(86vh, 760px);
+      overflow: auto;
+      padding: clamp(24px, 5vw, 40px);
+      transform: scale(0.96);
+      transition: transform 0.25s ease;
+      background: #FFFFFF;
+      border: 1px solid #E5E5E5;
+    }
+
+    .modal.open .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .modal-close {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-button);
+      background: #F3F3F3;
+      color: #6B7280;
+      border: 1px solid #E5E5E5;
+      font-size: 1.1rem;
+      transition: all 0.25s ease;
+    }
+
+    .modal-close:hover,
+    .modal-close:focus-visible {
+      color: #111111;
+      border-color: #111111;
+    }
+
+    .modal-body {
+      display: grid;
+      gap: 16px;
+    }
+
+    .modal-body strong {
+      color: var(--text-primary);
+    }
+
+    body.modal-locked {
+      overflow: hidden;
+    }
+
+    /* CSS: Approved scroll animations */
+    .fade-up,
+    .fade-in {
+      opacity: 0;
+      transition-property: opacity, transform;
+      transition-timing-function: ease;
+    }
+
+    .fade-up {
+      transform: translateY(20px);
+      transition-duration: 0.5s;
+    }
+
+    .fade-in {
+      transition-duration: 0.4s;
+    }
+
+    .fade-up.animate,
+    .fade-in.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* CSS: Responsive */
+    @media (max-width: 1024px) {
+      .services-grid,
+      .work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .nav-actions {
+        display: none;
+      }
+
+      .hamburger,
+      .mobile-menu {
+        display: grid;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Timeline mobile handled in dedicated 768px breakpoint below */
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 48px 0;
+      }
+
+      .container {
+        width: min(100% - 24px, var(--max-width));
+      }
+
+      .hero {
+        min-height: 92vh;
+      }
+
+      .hero-ctas,
+      .hero-ctas .btn {
+        width: 100%;
+      }
+
+      .stats,
+      .services-grid,
+      .work-grid,
+      .metric-row {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card,
+      .work-card {
+        padding: 16px;
+      }
+
+      .contact-panel,
+      .contact-form {
+        padding: 22px;
+      }
+
+      .work-card {
+        min-height: auto;
+      }
+    }
+
+    /* Timeline mobile collapse */
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 16px;
+        transform: none;
+      }
+
+      .milestone {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding: 0 16px 40px 44px;
+      }
+
+      .milestone::before {
+        left: 10px !important;
+        right: auto !important;
+      }
+    }
+
+    /* Back-to-top custom selector just in case */
+    .back-to-top {
+      background: #FFFFFF;
+      border: 1px solid #E5E5E5;
+      color: #111111;
+      transition: all 0.25s ease;
+    }
+
+    .back-to-top:hover {
+      border-color: #111111;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML: Navigation -->
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="Nayan Jyoti Thapa home">NJT</a>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="nav-link" href="#journey">Journey</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-briefcase" aria-hidden="true"></i>Hire Me</a>
+      </div>
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-inner">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#journey">Journey</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-briefcase" aria-hidden="true"></i>Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HTML: Hero -->
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero-content fade-up">
+          <p class="greeting" id="greeting">Hello</p>
+          <h1>Nayan Jyoti Thapa</h1>
+          <p class="type-line" aria-live="polite"><span id="typewriter">Digital Marketer</span><span class="type-cursor">|</span></p>
+          <p class="hero-copy">I build ad campaigns that convert, not just campaigns that run. Specializing in Google Ads, Meta Ads, and data-backed performance marketing.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#work"><i class="fa-solid fa-chart-line" aria-hidden="true"></i>View My Work</a>
+            <a class="btn btn-outline" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i>Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to About"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+    </section>
+
+    <!-- HTML: About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">About</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="avatar-wrap fade-in">
+            <div class="avatar" aria-label="Nayan Jyoti Thapa initials">NJT</div>
+          </div>
+          <div class="about-copy fade-up">
+            <p>I'm a performance-focused digital marketer based in Assam, India. My work centers around Google Search Ads, Meta Ads, and building campaigns that generate measurable results: leads, traffic, and conversions that actually matter to a business.</p>
+            <p>I approach every campaign with a data-first mindset, from audience research and creative strategy to tracking setup and continuous optimization.</p>
+            <p class="sample-note">Portfolio metrics below are clearly labeled as sample and learning metrics, not real client stats.</p>
+            <div class="stats">
+              <article class="stat-card">
+                <strong>4+</strong>
+                <span>Platforms Mastered</span>
+              </article>
+              <article class="stat-card">
+                <strong>10+</strong>
+                <span>Sample Campaigns Built</span>
+              </article>
+              <article class="stat-card">
+                <strong>100%</strong>
+                <span>Data-Driven Approach</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HTML: Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">Services</span>
+          <h2>What I Do</h2>
+          <p>End-to-end performance marketing services.</p>
+        </div>
+        <div class="grid services-grid">
+          <article class="card service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            <h3>Google Search Ads</h3>
+            <p>Targeted search campaigns built to capture high-intent traffic and drive conversions.</p>
+          </article>
+          <article class="card service-card fade-up">
+            <div class="service-icon"><i class="fa-brands fa-meta" aria-hidden="true"></i></div>
+            <h3>Meta Ads</h3>
+            <p>Scroll-stopping ad creatives paired with precise audience targeting across Facebook and Instagram.</p>
+          </article>
+          <article class="card service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+            <h3>Lead Generation</h3>
+            <p>Funnel-focused campaigns designed to bring in qualified leads, not just clicks.</p>
+          </article>
+          <article class="card service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></div>
+            <h3>Conversion Tracking Setup</h3>
+            <p>GTM, GA4, and Meta Pixel infrastructure so every rupee is accountable.</p>
+          </article>
+          <article class="card service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+            <h3>Campaign Optimization</h3>
+            <p>Bid strategy, audience refinement, and creative testing to lower CPA and improve ROAS.</p>
+          </article>
+          <article class="card service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+            <h3>A/B Testing</h3>
+            <p>Systematic split testing of creatives, copy, and landing pages to find what converts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HTML: Work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">Portfolio</span>
+          <h2>Sample Work</h2>
+          <p>Simulated campaigns built for learning and demonstration. All metrics are sample/demo, not real client data.</p>
+        </div>
+        <div class="filter-tabs fade-up" aria-label="Portfolio filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="google">Google Ads</button>
+          <button class="filter-btn" type="button" data-filter="meta">Meta Ads</button>
+        </div>
+        <div class="grid work-grid" id="workGrid">
+          <article class="card work-card fade-up" data-category="google" data-title="Local Services Lead Gen" data-objective="Leads" data-budget="Rs. 500/day (sample)" data-description="Search campaign for a fictional local plumbing business targeting high-intent keywords." data-details="Used exact and phrase match keywords, location targeting within a 15km radius, call extensions, and conversion optimization for form submissions." data-targeting="People searching urgent local service keywords within Assam city-radius locations." data-learning="High-intent local search works best when the ad copy, call extensions, and landing page message are tightly aligned.">
+            <div class="badge-row"><span class="badge">Google Ads</span><span class="objective">Objective: Lead Generation</span></div>
+            <h3>Local Business Lead Gen</h3>
+            <p>Search campaign for a fictional local plumbing business targeting high-intent keywords.</p>
+            <div class="metric-row">
+              <div class="metric"><small>SAMPLE</small><strong>CTR 6.2%</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CPC Rs. 14</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>38 Leads</strong></div>
+            </div>
+            <button class="btn btn-outline details-btn" type="button">View Details</button>
+            <div class="work-overlay">View Details</div>
+          </article>
+          <article class="card work-card fade-up" data-category="meta" data-title="E-commerce Traffic" data-objective="Traffic + Sales" data-budget="Rs. 800/day (sample)" data-description="Facebook and Instagram campaign for a fictional clothing brand." data-details="Used an interest and lookalike audience stack, carousel creative, and warm retargeting with a discount-led message." data-targeting="Fashion interests, cart visitors, engaged Instagram users, and one-percent lookalike audiences." data-learning="Creative variety and retargeting sequencing made the simulated funnel more efficient than cold traffic alone.">
+            <div class="badge-row"><span class="badge">Meta Ads</span><span class="objective">Objective: Traffic + Sales</span></div>
+            <h3>E-commerce Traffic</h3>
+            <p>Facebook and Instagram campaign for a fictional clothing brand.</p>
+            <div class="metric-row">
+              <div class="metric"><small>SAMPLE</small><strong>ROAS 3.1x</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CPC Rs. 6.4</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>45k Reach</strong></div>
+            </div>
+            <button class="btn btn-outline details-btn" type="button">View Details</button>
+            <div class="work-overlay">View Details</div>
+          </article>
+          <article class="card work-card fade-up" data-category="meta" data-title="App Install Campaign" data-objective="App Installs" data-budget="Rs. 600/day (sample)" data-description="Instagram-focused campaign for a fictional fitness app." data-details="Used video creative with a strong hook in the first three seconds, age 18-34 targeting, and A/B tested two creative angles." data-targeting="Fitness, wellness, and habit-building audiences, with separate ad sets by age and interest cluster." data-learning="Early video hooks and tighter audience splits improved simulated install intent.">
+            <div class="badge-row"><span class="badge">Meta Ads</span><span class="objective">Objective: App Installs</span></div>
+            <h3>App Install Campaign</h3>
+            <p>Instagram-focused campaign for a fictional fitness app.</p>
+            <div class="metric-row">
+              <div class="metric"><small>SAMPLE</small><strong>CPI Rs. 22</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>280 Installs</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CTR 4.8%</strong></div>
+            </div>
+            <button class="btn btn-outline details-btn" type="button">View Details</button>
+            <div class="work-overlay">View Details</div>
+          </article>
+          <article class="card work-card fade-up" data-category="google" data-title="B2B Lead Gen" data-objective="Leads" data-budget="Rs. 1000/day (sample)" data-description="Search campaign targeting business owners looking for accounting software." data-details="Used long-tail keyword strategy, ad schedule optimization, sitelink and callout extensions, plus a negative keyword list of 60+ terms." data-targeting="Business owners, finance managers, and searchers comparing accounting tools." data-learning="Negative keywords and commercial-intent phrase groups sharpened lead quality in the simulation.">
+            <div class="badge-row"><span class="badge">Google Ads</span><span class="objective">Objective: Leads</span></div>
+            <h3>B2B Lead Gen</h3>
+            <p>Search campaign targeting business owners looking for accounting software.</p>
+            <div class="metric-row">
+              <div class="metric"><small>SAMPLE</small><strong>CTR 8.1%</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CPL Rs. 180</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CVR 11%</strong></div>
+            </div>
+            <button class="btn btn-outline details-btn" type="button">View Details</button>
+            <div class="work-overlay">View Details</div>
+          </article>
+          <article class="card work-card fade-up" data-category="meta" data-title="Remarketing Campaign" data-objective="Conversions" data-budget="Rs. 400/day (sample)" data-description="Retargeting website visitors for a fictional ed-tech brand." data-details="Used custom audience from pixel data, dynamic product ads, and sequential messaging across three ad sets." data-targeting="Website visitors, landing page viewers, and people who engaged with course pages." data-learning="Warm audiences need frequency control and message sequencing to avoid wasted impressions.">
+            <div class="badge-row"><span class="badge">Meta Ads</span><span class="objective">Objective: Conversions</span></div>
+            <h3>Remarketing Campaign</h3>
+            <p>Retargeting website visitors for a fictional ed-tech brand.</p>
+            <div class="metric-row">
+              <div class="metric"><small>SAMPLE</small><strong>ROAS 4.2x</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>Freq. 3.1</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CPA Rs. 310</strong></div>
+            </div>
+            <button class="btn btn-outline details-btn" type="button">View Details</button>
+            <div class="work-overlay">View Details</div>
+          </article>
+          <article class="card work-card fade-up" data-category="meta" data-title="Brand Awareness" data-objective="Awareness" data-budget="Rs. 300/day (sample)" data-description="Top-of-funnel awareness campaign for a fictional restaurant chain." data-details="Used broad audience targeting, video format optimized for six-second views, and geographic targeting around city locations." data-targeting="City-radius food audiences, broad reach segments, and short-video viewers." data-learning="Simple, fast video creative can make awareness campaigns easier to evaluate by view quality and CPM.">
+            <div class="badge-row"><span class="badge">Meta Ads</span><span class="objective">Objective: Awareness</span></div>
+            <h3>Brand Awareness</h3>
+            <p>Top-of-funnel awareness campaign for a fictional restaurant chain.</p>
+            <div class="metric-row">
+              <div class="metric"><small>SAMPLE</small><strong>1.2L Impr.</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>CPM Rs. 38</strong></div>
+              <div class="metric"><small>SAMPLE</small><strong>18k Views</strong></div>
+            </div>
+            <button class="btn btn-outline details-btn" type="button">View Details</button>
+            <div class="work-overlay">View Details</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HTML: Journey -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">Journey</span>
+          <h2>My Journey</h2>
+        </div>
+        <div class="timeline">
+          <article class="card milestone fade-up"><time>2022</time><h3>The Beginning</h3><p>Discovered digital marketing and started learning SEO, social media, and paid advertising fundamentals.</p></article>
+          <article class="card milestone fade-up"><time>2023</time><h3>Going Deep into Performance</h3><p>Focused on Google Ads and Meta Ads, completed certifications, and began building simulated campaigns.</p></article>
+          <article class="card milestone fade-up"><time>2024</time><h3>Building Real Skills</h3><p>Practiced campaign setups, conversion tracking with GA4 and Meta Pixel, and A/B testing frameworks.</p></article>
+          <article class="card milestone fade-up"><time>2025</time><h3>Portfolio & Practice</h3><p>Built a sample campaign portfolio while refining targeting strategies and preparing for client work.</p></article>
+          <article class="card milestone fade-up"><time>Now</time><h3>Open for Opportunities</h3><p>Seeking early-stage clients, freelance projects, and collaborative work to turn practice into proof.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HTML: Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">Testimonials</span>
+          <h2>Client Words</h2>
+        </div>
+        <article class="card testimonial-card fade-in">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
+          <p>I'm currently in the early stages of my career, actively building real-world experience through sample campaigns and freelance opportunities. This section will be updated as I work with clients.</p>
+          <a href="#contact">Interested in working together? Let's connect.</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- HTML: Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">Contact</span>
+          <h2>Let's Work Together</h2>
+          <p>Have a project in mind? Reach out. I'd love to hear about it.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="card contact-panel fade-up">
+            <ul class="contact-list">
+              <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><strong>Client Inquiries</strong><a href="mailto:nayan.nexare@gmail.com">nayan.nexare@gmail.com</a></span></li>
+              <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><strong>Team / Collab</strong><a href="mailto:nexareteam@gmail.com">nexareteam@gmail.com</a></span></li>
+              <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><strong>Location</strong>Assam, India</span></li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Availability</strong>Currently available for freelance projects</span></li>
+            </ul>
+          </aside>
+          <form class="card contact-form fade-up" id="contactForm">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i>Send Message</button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- HTML: Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">NJT</div>
+      <p>Nayan Jyoti Thapa - Digital Marketer</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>Copyright 2025 Nayan Jyoti Thapa. Built with intent.</p>
+    </div>
+  </footer>
+
+  <!-- HTML: Work details modal -->
+  <div class="modal" id="workModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <article class="card modal-card">
+      <div class="modal-top">
+        <div>
+          <span class="section-kicker" id="modalObjective">Campaign</span>
+          <h2 id="modalTitle">Campaign Details</h2>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close modal"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </article>
+  </div>
+
+  <script>
+    /* JS: Safe single-file interactions */
+    document.addEventListener("DOMContentLoaded", function () {
+      "use strict";
+
+      const siteNav = document.querySelector(".site-nav");
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector("#mobileMenu");
+      const allNavLinks = document.querySelectorAll('a[href^="#"]');
+      const sectionLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("main section[id]");
+      const greeting = document.querySelector("#greeting");
+      const typewriter = document.querySelector("#typewriter");
+      const animatedItems = document.querySelectorAll(".fade-up, .fade-in");
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const workCards = document.querySelectorAll(".work-card");
+      const modal = document.querySelector("#workModal");
+      const modalTitle = document.querySelector("#modalTitle");
+      const modalObjective = document.querySelector("#modalObjective");
+      const modalBody = document.querySelector("#modalBody");
+      const modalClose = document.querySelector(".modal-close");
+      const contactForm = document.querySelector("#contactForm");
+      const formMessage = document.querySelector("#formMessage");
+
+      const updateNavState = function () {
+        if (!siteNav) {
+          return;
+        }
+        siteNav.classList.toggle("scrolled", window.scrollY > 80);
+      };
+
+      updateNavState();
+      window.addEventListener("scroll", updateNavState, { passive: true });
+
+      if (greeting) {
+        const hour = new Date().getHours();
+        let message = "Good Evening 🌙";
+        if (hour < 12) {
+          message = "Good Morning ☀️";
+        } else if (hour < 17) {
+          message = "Good Afternoon 🌤️";
+        }
+        greeting.textContent = message;
+      }
+
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", function () {
+          const isOpen = mobileMenu.classList.toggle("open");
+          hamburger.setAttribute("aria-expanded", String(isOpen));
+          hamburger.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        });
+      }
+
+      allNavLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (mobileMenu && mobileMenu.classList.contains("open")) {
+            mobileMenu.classList.remove("open");
+          }
+          if (hamburger) {
+            hamburger.setAttribute("aria-expanded", "false");
+            hamburger.setAttribute("aria-label", "Open menu");
+          }
+        });
+      });
+
+      if (typewriter) {
+        const words = ["Your Digital Marketer", "Your Performance Ads Specialist", "Your Google & Meta Ads Expert", "Your ROI-Driven Campaigner"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+
+        window.setInterval(function () {
+          const currentWord = words[wordIndex] || "";
+          if (deleting) {
+            charIndex -= 1;
+          } else {
+            charIndex += 1;
+          }
+
+          typewriter.textContent = currentWord.slice(0, charIndex);
+
+          if (!deleting && charIndex === currentWord.length) {
+            deleting = true;
+          } else if (deleting && charIndex === 0) {
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+        }, 115);
+      }
+
+      if ("IntersectionObserver" in window && animatedItems.length > 0) {
+        const animationObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        animatedItems.forEach(function (item, index) {
+          if (item) {
+            item.style.transitionDelay = String((index % 6) * 80) + "ms";
+            animationObserver.observe(item);
+          }
+        });
+      } else {
+        animatedItems.forEach(function (item) {
+          if (item) {
+            item.classList.add("animate");
+          }
+        });
+      }
+
+      if ("IntersectionObserver" in window && sections.length > 0 && sectionLinks.length > 0) {
+        const activeObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            const sectionId = entry.target.getAttribute("id");
+            sectionLinks.forEach(function (link) {
+              const href = link.getAttribute("href");
+              link.classList.toggle("active", href === "#" + sectionId);
+            });
+          });
+        }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
+
+        sections.forEach(function (section) {
+          activeObserver.observe(section);
+        });
+      }
+
+      filterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const filter = button.getAttribute("data-filter") || "all";
+          filterButtons.forEach(function (item) {
+            item.classList.toggle("active", item === button);
+          });
+          let visibleIndex = 0;
+          workCards.forEach(function (card) {
+            const category = card.getAttribute("data-category");
+            const shouldShow = filter === "all" || category === filter;
+            if (shouldShow) {
+              card.hidden = false;
+              card.style.transitionDelay = String(visibleIndex * 80) + "ms";
+              visibleIndex += 1;
+              card.classList.remove("animate");
+              void card.offsetHeight; // force reflow
+              card.classList.add("animate");
+            } else {
+              card.hidden = true;
+            }
+          });
+        });
+      });
+
+      const closeModal = function () {
+        if (!modal) {
+          return;
+        }
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-locked");
+      };
+
+      const openModal = function (card) {
+        if (!card || !modal || !modalTitle || !modalObjective || !modalBody) {
+          return;
+        }
+
+        const title = card.getAttribute("data-title") || "Campaign Details";
+        const objective = card.getAttribute("data-objective") || "Campaign";
+        const budget = card.getAttribute("data-budget") || "Sample budget";
+        const description = card.getAttribute("data-description") || "";
+        const details = card.getAttribute("data-details") || "";
+        const targeting = card.getAttribute("data-targeting") || "";
+        const learning = card.getAttribute("data-learning") || "";
+
+        modalTitle.textContent = title;
+        modalObjective.textContent = objective;
+        modalBody.innerHTML = "";
+
+        [
+          ["Budget", budget],
+          ["Full Description", description],
+          ["Strategy Used", details],
+          ["Targeting Approach", targeting],
+          ["Key Learnings", learning]
+        ].forEach(function (item) {
+          const paragraph = document.createElement("p");
+          const strong = document.createElement("strong");
+          strong.textContent = item[0] + ": ";
+          paragraph.appendChild(strong);
+          paragraph.appendChild(document.createTextNode(item[1]));
+          modalBody.appendChild(paragraph);
+        });
+
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-locked");
+      };
+
+      workCards.forEach(function (card) {
+        const detailsButton = card.querySelector(".details-btn");
+        if (detailsButton) {
+          detailsButton.addEventListener("click", function () {
+            openModal(card);
+          });
+        }
+      });
+
+      if (modalClose) {
+        modalClose.addEventListener("click", closeModal);
+      }
+
+      if (modal) {
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      if (contactForm && formMessage) {
+        contactForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          formMessage.textContent = "Thanks! I'll get back to you soon.";
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
